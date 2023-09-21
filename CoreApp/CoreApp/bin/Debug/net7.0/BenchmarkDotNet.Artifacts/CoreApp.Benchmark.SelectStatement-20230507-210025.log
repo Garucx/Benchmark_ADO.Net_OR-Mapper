@@ -1,0 +1,73 @@
+// Validating benchmarks:
+//    * No exporters defined, results will not be persisted.
+
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 1 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\54f438bf-0f22-44dd-b3cd-da7850acf71c
+// command took 1,19s and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\54f438bf-0f22-44dd-b3cd-da7850acf71c
+// command took 2,08s and exited with 0
+// ***** Done, took 00:00:03 (3.27 sec)   *****
+// Found 1 benchmarks:
+//   SelectStatement.SelectAdo: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Höchstleistung)
+// **************************
+// Benchmark: SelectStatement.SelectAdo: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 54f438bf-0f22-44dd-b3cd-da7850acf71c.dll --anonymousPipes 1648 1656 --benchmarkName CoreApp.Benchmark.SelectStatement.SelectAdo --job Default --benchmarkId 0 in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\54f438bf-0f22-44dd-b3cd-da7850acf71c\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 7.0.1 (7.0.122.56804), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 149900.00 ns, 149.9000 us/op
+WorkloadJitting  1: 1 op, 96200.00 ns, 96.2000 us/op
+
+OverheadJitting  2: 16 op, 135300.00 ns, 8.4563 us/op
+WorkloadJitting  2: 16 op, 136700.00 ns, 8.5437 us/op
+
+WorkloadPilot    1: 16 op, 400.00 ns, 25.0000 ns/op
+WorkloadPilot    2: 32 op, 500.00 ns, 15.6250 ns/op
+WorkloadPilot    3: 64 op, 500.00 ns, 7.8125 ns/op
+WorkloadPilot    4: 128 op, 400.00 ns, 3.1250 ns/op
+WorkloadPilot    5: 256 op, 700.00 ns, 2.7344 ns/op
+WorkloadPilot    6: 512 op, 900.00 ns, 1.7578 ns/op
+WorkloadPilot    7: 1024 op, 2100.00 ns, 2.0508 ns/op
+WorkloadPilot    8: 2048 op, 3800.00 ns, 1.8555 ns/op
+WorkloadPilot    9: 4096 op, 5000.00 ns, 1.2207 ns/op
+WorkloadPilot   10: 8192 op, 11500.00 ns, 1.4038 ns/op
+WorkloadPilot   11: 16384 op, 19100.00 ns, 1.1658 ns/op
+WorkloadPilot   12: 32768 op, 37400.00 ns, 1.1414 ns/op
+WorkloadPilot   13: 65536 op, 74400.00 ns, 1.1353 ns/op
+WorkloadPilot   14: 131072 op, 148600.00 ns, 1.1337 ns/op
+WorkloadPilot   15: 262144 op, 296900.00 ns, 1.1326 ns/op
+WorkloadPilot   16: 524288 op, 661900.00 ns, 1.2625 ns/op
+WorkloadPilot   17: 1048576 op, 1311200.00 ns, 1.2505 ns/op
+WorkloadPilot   18: 2097152 op, 2742900.00 ns, 1.3079 ns/op
+WorkloadPilot   19: 4194304 op, 4790700.00 ns, 1.1422 ns/op
+WorkloadPilot   20: 8388608 op, 9847700.00 ns, 1.1739 ns/op
+WorkloadPilot   21: 16777216 op, 19637800.00 ns, 1.1705 ns/op
+WorkloadPilot   22: 33554432 op, 40017600.00 ns, 1.1926 ns/op
+WorkloadPilot   23: 67108864 op, 80376200.00 ns, 1.1977 ns/op
+WorkloadPilot   24: 134217728 op, 174214000.00 ns, 1.2980 ns/op
+WorkloadPilot   25: 268435456 op, 314748400.00 ns, 1.1725 ns/op
+WorkloadPilot   26: 536870912 op, 628535800.00 ns, 1.1707 ns/op
+
+OverheadWarmup   1: 536870912 op, 730778900.00 ns, 1.3612 ns/op
+OverheadWarmup   2: 536870912 op, 638191300.00 ns, 1.1887 ns/op
+OverheadWarmup   3: 536870912 op, 628296600.00 ns, 1.1703 ns/op
+OverheadWarmup   4: 536870912 op, 627037700.00 ns, 1.1679 ns/op
+OverheadWarmup   5: 536870912 op, 627139700.00 ns, 1.1681 ns/op
+OverheadWarmup   6: 536870912 op, 632804500.00 ns, 1.1787 ns/op
+OverheadWarmup   7: 536870912 op, 648263700.00 ns, 1.2075 ns/op
+OverheadWarmup   8: 536870912 op, 636504300.00 ns, 1.1856 ns/op
+OverheadWarmup   9: 536870912 op, 627369500.00 ns, 1.1686 ns/op
+OverheadWarmup  10: 536870912 op, 636480700.00 ns, 1.1855 ns/op
+
+Overhea

@@ -1,0 +1,7 @@
+// Validating benchmarks:
+//    * No exporters defined, results will not be persisted.
+
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 3 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\f8e15fdb-7202-43e3-9026-9de2e972db8c

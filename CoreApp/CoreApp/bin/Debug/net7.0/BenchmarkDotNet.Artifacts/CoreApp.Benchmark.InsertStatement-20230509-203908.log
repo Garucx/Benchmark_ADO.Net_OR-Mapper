@@ -1,0 +1,211 @@
+// Validating benchmarks:
+//    * No exporters defined, results will not be persisted.
+
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\1eadd169-9315-451c-a7a0-91e16cbea5d2
+// command took 1,47s and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\1eadd169-9315-451c-a7a0-91e16cbea5d2
+// command took 3,18s and exited with 0
+// ***** Done, took 00:00:04 (4.72 sec)   *****
+// Found 2 benchmarks:
+//   InsertStatement.InsertADO: DefaultJob
+//   InsertStatement.InsertNHibernate: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Höchstleistung)
+// **************************
+// Benchmark: InsertStatement.InsertADO: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 1eadd169-9315-451c-a7a0-91e16cbea5d2.dll --anonymousPipes 1752 1748 --benchmarkName CoreApp.Benchmark.InsertStatement.InsertADO --job Default --benchmarkId 0 in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\1eadd169-9315-451c-a7a0-91e16cbea5d2\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 158700.00 ns, 158.7000 us/op
+WorkloadJitting  1: 1 op, 5500300.00 ns, 5.5003 ms/op
+
+OverheadJitting  2: 16 op, 143600.00 ns, 8.9750 us/op
+WorkloadJitting  2: 16 op, 3600000.00 ns, 225.0000 us/op
+
+WorkloadPilot    1: 16 op, 3313100.00 ns, 207.0687 us/op
+WorkloadPilot    2: 32 op, 6232300.00 ns, 194.7594 us/op
+WorkloadPilot    3: 64 op, 12687500.00 ns, 198.2422 us/op
+WorkloadPilot    4: 128 op, 25605000.00 ns, 200.0391 us/op
+WorkloadPilot    5: 256 op, 50339100.00 ns, 196.6371 us/op
+WorkloadPilot    6: 512 op, 112552700.00 ns, 219.8295 us/op
+WorkloadPilot    7: 1024 op, 199620700.00 ns, 194.9421 us/op
+WorkloadPilot    8: 2048 op, 393887500.00 ns, 192.3279 us/op
+WorkloadPilot    9: 4096 op, 821287000.00 ns, 200.5095 us/op
+
+OverheadWarmup   1: 4096 op, 7900.00 ns, 1.9287 ns/op
+OverheadWarmup   2: 4096 op, 8500.00 ns, 2.0752 ns/op
+OverheadWarmup   3: 4096 op, 6800.00 ns, 1.6602 ns/op
+OverheadWarmup   4: 4096 op, 6800.00 ns, 1.6602 ns/op
+OverheadWarmup   5: 4096 op, 6800.00 ns, 1.6602 ns/op
+
+OverheadActual   1: 4096 op, 6800.00 ns, 1.6602 ns/op
+OverheadActual   2: 4096 op, 6800.00 ns, 1.6602 ns/op
+OverheadActual   3: 4096 op, 6800.00 ns, 1.6602 ns/op
+OverheadActual   4: 4096 op, 14400.00 ns, 3.5156 ns/op
+OverheadActual   5: 4096 op, 6800.00 ns, 1.6602 ns/op
+OverheadActual   6: 4096 op, 6700.00 ns, 1.6357 ns/op
+OverheadActual   7: 4096 op, 6800.00 ns, 1.6602 ns/op
+OverheadActual   8: 4096 op, 6800.00 ns, 1.6602 ns/op
+OverheadActual   9: 4096 op, 6800.00 ns, 1.6602 ns/op
+OverheadActual  10: 4096 op, 6800.00 ns, 1.6602 ns/op
+OverheadActual  11: 4096 op, 6800.00 ns, 1.6602 ns/op
+OverheadActual  12: 4096 op, 7400.00 ns, 1.8066 ns/op
+OverheadActual  13: 4096 op, 6800.00 ns, 1.6602 ns/op
+OverheadActual  14: 4096 op, 6800.00 ns, 1.6602 ns/op
+OverheadActual  15: 4096 op, 6700.00 ns, 1.6357 ns/op
+
+WorkloadWarmup   1: 4096 op, 987467400.00 ns, 241.0809 us/op
+WorkloadWarmup   2: 4096 op, 974324800.00 ns, 237.8723 us/op
+WorkloadWarmup   3: 4096 op, 975669200.00 ns, 238.2005 us/op
+WorkloadWarmup   4: 4096 op, 958381200.00 ns, 233.9798 us/op
+WorkloadWarmup   5: 4096 op, 798753800.00 ns, 195.0083 us/op
+WorkloadWarmup   6: 4096 op, 795847000.00 ns, 194.2986 us/op
+WorkloadWarmup   7: 4096 op, 797390100.00 ns, 194.6753 us/op
+WorkloadWarmup   8: 4096 op, 789005000.00 ns, 192.6282 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 4096 op, 787744500.00 ns, 192.3204 us/op
+WorkloadActual   2: 4096 op, 789245300.00 ns, 192.6868 us/op
+WorkloadActual   3: 4096 op, 789216600.00 ns, 192.6798 us/op
+WorkloadActual   4: 4096 op, 789891000.00 ns, 192.8445 us/op
+WorkloadActual   5: 4096 op, 786917900.00 ns, 192.1186 us/op
+WorkloadActual   6: 4096 op, 789171400.00 ns, 192.6688 us/op
+WorkloadActual   7: 4096 op, 790287900.00 ns, 192.9414 us/op
+WorkloadActual   8: 4096 op, 790539100.00 ns, 193.0027 us/op
+WorkloadActual   9: 4096 op, 789868500.00 ns, 192.8390 us/op
+WorkloadActual  10: 4096 op, 793170900.00 ns, 193.6452 us/op
+WorkloadActual  11: 4096 op, 794220800.00 ns, 193.9016 us/op
+WorkloadActual  12: 4096 op, 788299000.00 ns, 192.4558 us/op
+WorkloadActual  13: 4096 op, 790127500.00 ns, 192.9022 us/op
+WorkloadActual  14: 4096 op, 790631700.00 ns, 193.0253 us/op
+WorkloadActual  15: 4096 op, 785446900.00 ns, 191.7595 us/op
+
+// AfterActualRun
+WorkloadResult   1: 4096 op, 787737700.00 ns, 192.3188 us/op
+WorkloadResult   2: 4096 op, 789238500.00 ns, 192.6852 us/op
+WorkloadResult   3: 4096 op, 789209800.00 ns, 192.6782 us/op
+WorkloadResult   4: 4096 op, 789884200.00 ns, 192.8428 us/op
+WorkloadResult   5: 4096 op, 786911100.00 ns, 192.1170 us/op
+WorkloadResult   6: 4096 op, 789164600.00 ns, 192.6671 us/op
+WorkloadResult   7: 4096 op, 790281100.00 ns, 192.9397 us/op
+WorkloadResult   8: 4096 op, 790532300.00 ns, 193.0010 us/op
+WorkloadResult   9: 4096 op, 789861700.00 ns, 192.8373 us/op
+WorkloadResult  10: 4096 op, 788292200.00 ns, 192.4542 us/op
+WorkloadResult  11: 4096 op, 790120700.00 ns, 192.9006 us/op
+WorkloadResult  12: 4096 op, 790624900.00 ns, 193.0237 us/op
+WorkloadResult  13: 4096 op, 785440100.00 ns, 191.7578 us/op
+// GC:  0 0 0 820040 4096
+// Threading:  0 0 4096
+
+// AfterAll
+// Benchmark Process 11020 has exited with code 0.
+
+Mean = 192.633 μs, StdErr = 0.105 μs (0.05%), N = 13, StdDev = 0.377 μs
+Min = 191.758 μs, Q1 = 192.454 μs, Median = 192.685 μs, Q3 = 192.901 μs, Max = 193.024 μs
+IQR = 0.446 μs, LowerFence = 191.785 μs, UpperFence = 193.570 μs
+ConfidenceInterval = [192.181 μs; 193.084 μs] (CI 99.9%), Margin = 0.452 μs (0.23% of Mean)
+Skewness = -0.95, Kurtosis = 2.76, MValue = 2
+
+// ** Remained 1 (50,0 %) benchmark(s) to run. Estimated finish 2023-05-09 20:39 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Höchstleistung)
+// **************************
+// Benchmark: InsertStatement.InsertNHibernate: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 1eadd169-9315-451c-a7a0-91e16cbea5d2.dll --anonymousPipes 1700 1176 --benchmarkName CoreApp.Benchmark.InsertStatement.InsertNHibernate --job Default --benchmarkId 1 in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\1eadd169-9315-451c-a7a0-91e16cbea5d2\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 146200.00 ns, 146.2000 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at CoreApp.Connections.NHIBERNATE.GetSession() in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\Connections\NHibernate.cs:line 38
+   at CoreApp.Benchmark.InsertStatement.InsertNHibernate() in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\Benchmark\InsertStatement.cs:line 29
+   at BenchmarkDotNet.Autogenerated.Runnable_1.WorkloadActionNoUnroll(Int64 invokeCount) in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\1eadd169-9315-451c-a7a0-91e16cbea5d2\1eadd169-9315-451c-a7a0-91e16cbea5d2.notcs:line 519
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_1.Run(IHost host, String benchmarkName) in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\1eadd169-9315-451c-a7a0-91e16cbea5d2\1eadd169-9315-451c-a7a0-91e16cbea5d2.notcs:line 376
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\1eadd169-9315-451c-a7a0-91e16cbea5d2\1eadd169-9315-451c-a7a0-91e16cbea5d2.notcs:line 57
+// AfterAll
+No Workload Results were obtained from the run.
+// Benchmark Process 19696 has exited with code -1.
+
+// ** Remained 0 (0,0 %) benchmark(s) to run. Estimated finish 2023-05-09 20:39 (0h 0m from now) **
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Höchstleistung)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+
+// * Detailed results *
+InsertStatement.InsertADO: DefaultJob
+Runtime = .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 192.633 μs, StdErr = 0.105 μs (0.05%), N = 13, StdDev = 0.377 μs
+Min = 191.758 μs, Q1 = 192.454 μs, Median = 192.685 μs, Q3 = 192.901 μs, Max = 193.024 μs
+IQR = 0.446 μs, LowerFence = 191.785 μs, UpperFence = 193.570 μs
+ConfidenceInterval = [192.181 μs; 193.084 μs] (CI 99.9%), Margin = 0.452 μs (0.23% of Mean)
+Skewness = -0.95, Kurtosis = 2.76, MValue = 2
+-------------------- Histogram --------------------
+[191.547 μs ; 193.234 μs) | @@@@@@@@@@@@@
+---------------------------------------------------
+
+InsertStatement.InsertNHibernate: DefaultJob
+Runtime = .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2; GC = Concurrent Workstation
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.5, OS=Windows 11 (10.0.22621.1555/22H2/2022Update/SunValley2)
+AMD Ryzen 5 5600X, 1 CPU, 12 logical and 6 physical cores
+.NET SDK=7.0.203
+  [Host]     : .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2 DEBUG [AttachedDebugger]
+  DefaultJob : .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+
+
+|           Method |     Mean |   Error |  StdDev | Rank | Allocated |
+|----------------- |---------:|--------:|--------:|-----:|----------:|
+|        InsertADO | 192.6 μs | 0.45 μs | 0.38 μs |    1 |     200 B |
+| InsertNHibernate |       NA |      NA |      NA |    ? |         - |
+
+Benchmarks with issues:
+  InsertStatement.InsertNHibernate: DefaultJob
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Rank      : Relative position of current benchmark mean among all benchmarks (Arabic style)
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 μs      : 1 Microsecond (0.000001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:22 (22.47 sec), executed benchmarks: 2
+
+Global total time: 00:00:27 (27.36 sec), executed benchmarks: 2
+// * Artifacts cleanup *

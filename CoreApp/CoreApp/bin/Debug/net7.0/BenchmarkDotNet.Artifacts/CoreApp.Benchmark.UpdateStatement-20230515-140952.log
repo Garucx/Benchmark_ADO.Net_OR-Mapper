@@ -1,0 +1,30 @@
+// Validating benchmarks:
+//    * No exporters defined, results will not be persisted.
+
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 3 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\73a82edd-1c01-42bb-8db0-e529abbf1a14
+// command took 15,32s and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\73a82edd-1c01-42bb-8db0-e529abbf1a14
+// command took 20,75s and exited with 0
+// ***** Done, took 00:00:36 (36.58 sec)   *****
+// Found 3 benchmarks:
+//   UpdateStatement.UpdateEF: Job-IJHJXV(InvocationCount=1, UnrollFactor=1)
+//   UpdateStatement.UpdateAdo: Job-IJHJXV(InvocationCount=1, UnrollFactor=1)
+//   UpdateStatement.UpdateNHibernate: Job-IJHJXV(InvocationCount=1, UnrollFactor=1)
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Höchstleistung)
+// **************************
+// Benchmark: UpdateStatement.UpdateEF: Job-IJHJXV(InvocationCount=1, UnrollFactor=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 73a82edd-1c01-42bb-8db0-e529abbf1a14.dll --anonymousPipes 1492 1420 --benchmarkName CoreApp.Benchmark.UpdateStatement.UpdateEF --job "InvocationCount=1, UnrollFactor=1" --benchmarkId 0 in C:\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\73a82edd-1c01-42bb-8db0-e529abbf1a14\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-UMPORW(InvocationCount=1, UnrollFactor=1)
+

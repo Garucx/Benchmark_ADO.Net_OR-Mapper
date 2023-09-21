@@ -1,0 +1,1028 @@
+// Validating benchmarks:
+//    * No exporters defined, results will not be persisted.
+
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 3 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\0b043087-0176-45e2-9e3c-135f8cc668bf
+// command took 1,46s and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\0b043087-0176-45e2-9e3c-135f8cc668bf
+// command took 2,23s and exited with 0
+// ***** Done, took 00:00:03 (3.84 sec)   *****
+// Found 3 benchmarks:
+//   UpdateStatement.UpdateEF: Job-LEYHBL(InvocationCount=1, UnrollFactor=1)
+//   UpdateStatement.UpdateAdo: Job-LEYHBL(InvocationCount=1, UnrollFactor=1)
+//   UpdateStatement.UpdateNHibernate: Job-LEYHBL(InvocationCount=1, UnrollFactor=1)
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Höchstleistung)
+// **************************
+// Benchmark: UpdateStatement.UpdateEF: Job-LEYHBL(InvocationCount=1, UnrollFactor=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 0b043087-0176-45e2-9e3c-135f8cc668bf.dll --anonymousPipes 1432 1428 --benchmarkName CoreApp.Benchmark.UpdateStatement.UpdateEF --job "InvocationCount=1, UnrollFactor=1" --benchmarkId 0 in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\0b043087-0176-45e2-9e3c-135f8cc668bf\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-XCVADS(InvocationCount=1, UnrollFactor=1)
+
+OverheadJitting  1: 1 op, 178500.00 ns, 178.5000 us/op
+WorkloadJitting  1: 1 op, 249910000.00 ns, 249.9100 ms/op
+
+OverheadWarmup   1: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadWarmup   2: 1 op, 700.00 ns, 700.0000 ns/op
+OverheadWarmup   3: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   5: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   6: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadWarmup   7: 1 op, 400.00 ns, 400.0000 ns/op
+
+OverheadActual   1: 1 op, 600.00 ns, 600.0000 ns/op
+OverheadActual   2: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   3: 1 op, 700.00 ns, 700.0000 ns/op
+OverheadActual   4: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual   5: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   9: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  10: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  11: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  12: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  13: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  14: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  15: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  16: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  17: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual  18: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  19: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  20: 1 op, 400.00 ns, 400.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 3222600.00 ns, 3.2226 ms/op
+WorkloadWarmup   2: 1 op, 2400300.00 ns, 2.4003 ms/op
+WorkloadWarmup   3: 1 op, 1947000.00 ns, 1.9470 ms/op
+WorkloadWarmup   4: 1 op, 1629200.00 ns, 1.6292 ms/op
+WorkloadWarmup   5: 1 op, 2170600.00 ns, 2.1706 ms/op
+WorkloadWarmup   6: 1 op, 2489200.00 ns, 2.4892 ms/op
+WorkloadWarmup   7: 1 op, 1946100.00 ns, 1.9461 ms/op
+WorkloadWarmup   8: 1 op, 1651100.00 ns, 1.6511 ms/op
+WorkloadWarmup   9: 1 op, 1886300.00 ns, 1.8863 ms/op
+WorkloadWarmup  10: 1 op, 1750700.00 ns, 1.7507 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 1881500.00 ns, 1.8815 ms/op
+WorkloadActual   2: 1 op, 2046100.00 ns, 2.0461 ms/op
+WorkloadActual   3: 1 op, 1822600.00 ns, 1.8226 ms/op
+WorkloadActual   4: 1 op, 1568300.00 ns, 1.5683 ms/op
+WorkloadActual   5: 1 op, 1678100.00 ns, 1.6781 ms/op
+WorkloadActual   6: 1 op, 2673900.00 ns, 2.6739 ms/op
+WorkloadActual   7: 1 op, 2138100.00 ns, 2.1381 ms/op
+WorkloadActual   8: 1 op, 2595200.00 ns, 2.5952 ms/op
+WorkloadActual   9: 1 op, 1693400.00 ns, 1.6934 ms/op
+WorkloadActual  10: 1 op, 1851600.00 ns, 1.8516 ms/op
+WorkloadActual  11: 1 op, 1988300.00 ns, 1.9883 ms/op
+WorkloadActual  12: 1 op, 1561000.00 ns, 1.5610 ms/op
+WorkloadActual  13: 1 op, 1564400.00 ns, 1.5644 ms/op
+WorkloadActual  14: 1 op, 8814600.00 ns, 8.8146 ms/op
+WorkloadActual  15: 1 op, 1858000.00 ns, 1.8580 ms/op
+WorkloadActual  16: 1 op, 2739800.00 ns, 2.7398 ms/op
+WorkloadActual  17: 1 op, 1962100.00 ns, 1.9621 ms/op
+WorkloadActual  18: 1 op, 1934000.00 ns, 1.9340 ms/op
+WorkloadActual  19: 1 op, 1867400.00 ns, 1.8674 ms/op
+WorkloadActual  20: 1 op, 2767900.00 ns, 2.7679 ms/op
+WorkloadActual  21: 1 op, 1756300.00 ns, 1.7563 ms/op
+WorkloadActual  22: 1 op, 1780200.00 ns, 1.7802 ms/op
+WorkloadActual  23: 1 op, 2119500.00 ns, 2.1195 ms/op
+WorkloadActual  24: 1 op, 2027700.00 ns, 2.0277 ms/op
+WorkloadActual  25: 1 op, 2103200.00 ns, 2.1032 ms/op
+WorkloadActual  26: 1 op, 2169500.00 ns, 2.1695 ms/op
+WorkloadActual  27: 1 op, 2199100.00 ns, 2.1991 ms/op
+WorkloadActual  28: 1 op, 1792600.00 ns, 1.7926 ms/op
+WorkloadActual  29: 1 op, 1633200.00 ns, 1.6332 ms/op
+WorkloadActual  30: 1 op, 1584000.00 ns, 1.5840 ms/op
+WorkloadActual  31: 1 op, 1522700.00 ns, 1.5227 ms/op
+WorkloadActual  32: 1 op, 1646500.00 ns, 1.6465 ms/op
+WorkloadActual  33: 1 op, 1918600.00 ns, 1.9186 ms/op
+WorkloadActual  34: 1 op, 2049400.00 ns, 2.0494 ms/op
+WorkloadActual  35: 1 op, 1695200.00 ns, 1.6952 ms/op
+WorkloadActual  36: 1 op, 2702300.00 ns, 2.7023 ms/op
+WorkloadActual  37: 1 op, 1887000.00 ns, 1.8870 ms/op
+WorkloadActual  38: 1 op, 1634000.00 ns, 1.6340 ms/op
+WorkloadActual  39: 1 op, 1950900.00 ns, 1.9509 ms/op
+WorkloadActual  40: 1 op, 2271500.00 ns, 2.2715 ms/op
+WorkloadActual  41: 1 op, 1786300.00 ns, 1.7863 ms/op
+WorkloadActual  42: 1 op, 1980400.00 ns, 1.9804 ms/op
+WorkloadActual  43: 1 op, 2377300.00 ns, 2.3773 ms/op
+WorkloadActual  44: 1 op, 2070600.00 ns, 2.0706 ms/op
+WorkloadActual  45: 1 op, 1976300.00 ns, 1.9763 ms/op
+WorkloadActual  46: 1 op, 1963300.00 ns, 1.9633 ms/op
+WorkloadActual  47: 1 op, 2173500.00 ns, 2.1735 ms/op
+WorkloadActual  48: 1 op, 2485400.00 ns, 2.4854 ms/op
+WorkloadActual  49: 1 op, 2510200.00 ns, 2.5102 ms/op
+WorkloadActual  50: 1 op, 1946400.00 ns, 1.9464 ms/op
+WorkloadActual  51: 1 op, 1632400.00 ns, 1.6324 ms/op
+WorkloadActual  52: 1 op, 1753900.00 ns, 1.7539 ms/op
+WorkloadActual  53: 1 op, 1614000.00 ns, 1.6140 ms/op
+WorkloadActual  54: 1 op, 1863400.00 ns, 1.8634 ms/op
+WorkloadActual  55: 1 op, 1703500.00 ns, 1.7035 ms/op
+WorkloadActual  56: 1 op, 1687500.00 ns, 1.6875 ms/op
+WorkloadActual  57: 1 op, 2003800.00 ns, 2.0038 ms/op
+WorkloadActual  58: 1 op, 2028100.00 ns, 2.0281 ms/op
+WorkloadActual  59: 1 op, 1685900.00 ns, 1.6859 ms/op
+WorkloadActual  60: 1 op, 1883600.00 ns, 1.8836 ms/op
+WorkloadActual  61: 1 op, 2343300.00 ns, 2.3433 ms/op
+WorkloadActual  62: 1 op, 2473300.00 ns, 2.4733 ms/op
+WorkloadActual  63: 1 op, 1899700.00 ns, 1.8997 ms/op
+WorkloadActual  64: 1 op, 1860100.00 ns, 1.8601 ms/op
+WorkloadActual  65: 1 op, 2004500.00 ns, 2.0045 ms/op
+WorkloadActual  66: 1 op, 1646000.00 ns, 1.6460 ms/op
+WorkloadActual  67: 1 op, 1805100.00 ns, 1.8051 ms/op
+WorkloadActual  68: 1 op, 1739300.00 ns, 1.7393 ms/op
+WorkloadActual  69: 1 op, 2187500.00 ns, 2.1875 ms/op
+WorkloadActual  70: 1 op, 1581700.00 ns, 1.5817 ms/op
+WorkloadActual  71: 1 op, 2075000.00 ns, 2.0750 ms/op
+WorkloadActual  72: 1 op, 2142900.00 ns, 2.1429 ms/op
+WorkloadActual  73: 1 op, 1821500.00 ns, 1.8215 ms/op
+WorkloadActual  74: 1 op, 2035600.00 ns, 2.0356 ms/op
+WorkloadActual  75: 1 op, 1792800.00 ns, 1.7928 ms/op
+WorkloadActual  76: 1 op, 2195200.00 ns, 2.1952 ms/op
+WorkloadActual  77: 1 op, 1587600.00 ns, 1.5876 ms/op
+WorkloadActual  78: 1 op, 1674800.00 ns, 1.6748 ms/op
+WorkloadActual  79: 1 op, 2376800.00 ns, 2.3768 ms/op
+WorkloadActual  80: 1 op, 2392600.00 ns, 2.3926 ms/op
+WorkloadActual  81: 1 op, 2025300.00 ns, 2.0253 ms/op
+WorkloadActual  82: 1 op, 1669400.00 ns, 1.6694 ms/op
+WorkloadActual  83: 1 op, 1714300.00 ns, 1.7143 ms/op
+WorkloadActual  84: 1 op, 1972300.00 ns, 1.9723 ms/op
+WorkloadActual  85: 1 op, 1982700.00 ns, 1.9827 ms/op
+WorkloadActual  86: 1 op, 1698500.00 ns, 1.6985 ms/op
+WorkloadActual  87: 1 op, 1944300.00 ns, 1.9443 ms/op
+WorkloadActual  88: 1 op, 1705100.00 ns, 1.7051 ms/op
+WorkloadActual  89: 1 op, 2009900.00 ns, 2.0099 ms/op
+WorkloadActual  90: 1 op, 1914100.00 ns, 1.9141 ms/op
+WorkloadActual  91: 1 op, 1563200.00 ns, 1.5632 ms/op
+WorkloadActual  92: 1 op, 1674900.00 ns, 1.6749 ms/op
+WorkloadActual  93: 1 op, 1859200.00 ns, 1.8592 ms/op
+WorkloadActual  94: 1 op, 2075800.00 ns, 2.0758 ms/op
+WorkloadActual  95: 1 op, 1788800.00 ns, 1.7888 ms/op
+WorkloadActual  96: 1 op, 2015400.00 ns, 2.0154 ms/op
+WorkloadActual  97: 1 op, 2204500.00 ns, 2.2045 ms/op
+WorkloadActual  98: 1 op, 2668400.00 ns, 2.6684 ms/op
+WorkloadActual  99: 1 op, 2193000.00 ns, 2.1930 ms/op
+WorkloadActual  100: 1 op, 2062600.00 ns, 2.0626 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 1881100.00 ns, 1.8811 ms/op
+WorkloadResult   2: 1 op, 2045700.00 ns, 2.0457 ms/op
+WorkloadResult   3: 1 op, 1822200.00 ns, 1.8222 ms/op
+WorkloadResult   4: 1 op, 1567900.00 ns, 1.5679 ms/op
+WorkloadResult   5: 1 op, 1677700.00 ns, 1.6777 ms/op
+WorkloadResult   6: 1 op, 2673500.00 ns, 2.6735 ms/op
+WorkloadResult   7: 1 op, 2137700.00 ns, 2.1377 ms/op
+WorkloadResult   8: 1 op, 2594800.00 ns, 2.5948 ms/op
+WorkloadResult   9: 1 op, 1693000.00 ns, 1.6930 ms/op
+WorkloadResult  10: 1 op, 1851200.00 ns, 1.8512 ms/op
+WorkloadResult  11: 1 op, 1987900.00 ns, 1.9879 ms/op
+WorkloadResult  12: 1 op, 1560600.00 ns, 1.5606 ms/op
+WorkloadResult  13: 1 op, 1564000.00 ns, 1.5640 ms/op
+WorkloadResult  14: 1 op, 1857600.00 ns, 1.8576 ms/op
+WorkloadResult  15: 1 op, 1961700.00 ns, 1.9617 ms/op
+WorkloadResult  16: 1 op, 1933600.00 ns, 1.9336 ms/op
+WorkloadResult  17: 1 op, 1867000.00 ns, 1.8670 ms/op
+WorkloadResult  18: 1 op, 1755900.00 ns, 1.7559 ms/op
+WorkloadResult  19: 1 op, 1779800.00 ns, 1.7798 ms/op
+WorkloadResult  20: 1 op, 2119100.00 ns, 2.1191 ms/op
+WorkloadResult  21: 1 op, 2027300.00 ns, 2.0273 ms/op
+WorkloadResult  22: 1 op, 2102800.00 ns, 2.1028 ms/op
+WorkloadResult  23: 1 op, 2169100.00 ns, 2.1691 ms/op
+WorkloadResult  24: 1 op, 2198700.00 ns, 2.1987 ms/op
+WorkloadResult  25: 1 op, 1792200.00 ns, 1.7922 ms/op
+WorkloadResult  26: 1 op, 1632800.00 ns, 1.6328 ms/op
+WorkloadResult  27: 1 op, 1583600.00 ns, 1.5836 ms/op
+WorkloadResult  28: 1 op, 1522300.00 ns, 1.5223 ms/op
+WorkloadResult  29: 1 op, 1646100.00 ns, 1.6461 ms/op
+WorkloadResult  30: 1 op, 1918200.00 ns, 1.9182 ms/op
+WorkloadResult  31: 1 op, 2049000.00 ns, 2.0490 ms/op
+WorkloadResult  32: 1 op, 1694800.00 ns, 1.6948 ms/op
+WorkloadResult  33: 1 op, 1886600.00 ns, 1.8866 ms/op
+WorkloadResult  34: 1 op, 1633600.00 ns, 1.6336 ms/op
+WorkloadResult  35: 1 op, 1950500.00 ns, 1.9505 ms/op
+WorkloadResult  36: 1 op, 2271100.00 ns, 2.2711 ms/op
+WorkloadResult  37: 1 op, 1785900.00 ns, 1.7859 ms/op
+WorkloadResult  38: 1 op, 1980000.00 ns, 1.9800 ms/op
+WorkloadResult  39: 1 op, 2376900.00 ns, 2.3769 ms/op
+WorkloadResult  40: 1 op, 2070200.00 ns, 2.0702 ms/op
+WorkloadResult  41: 1 op, 1975900.00 ns, 1.9759 ms/op
+WorkloadResult  42: 1 op, 1962900.00 ns, 1.9629 ms/op
+WorkloadResult  43: 1 op, 2173100.00 ns, 2.1731 ms/op
+WorkloadResult  44: 1 op, 2485000.00 ns, 2.4850 ms/op
+WorkloadResult  45: 1 op, 2509800.00 ns, 2.5098 ms/op
+WorkloadResult  46: 1 op, 1946000.00 ns, 1.9460 ms/op
+WorkloadResult  47: 1 op, 1632000.00 ns, 1.6320 ms/op
+WorkloadResult  48: 1 op, 1753500.00 ns, 1.7535 ms/op
+WorkloadResult  49: 1 op, 1613600.00 ns, 1.6136 ms/op
+WorkloadResult  50: 1 op, 1863000.00 ns, 1.8630 ms/op
+WorkloadResult  51: 1 op, 1703100.00 ns, 1.7031 ms/op
+WorkloadResult  52: 1 op, 1687100.00 ns, 1.6871 ms/op
+WorkloadResult  53: 1 op, 2003400.00 ns, 2.0034 ms/op
+WorkloadResult  54: 1 op, 2027700.00 ns, 2.0277 ms/op
+WorkloadResult  55: 1 op, 1685500.00 ns, 1.6855 ms/op
+WorkloadResult  56: 1 op, 1883200.00 ns, 1.8832 ms/op
+WorkloadResult  57: 1 op, 2342900.00 ns, 2.3429 ms/op
+WorkloadResult  58: 1 op, 2472900.00 ns, 2.4729 ms/op
+WorkloadResult  59: 1 op, 1899300.00 ns, 1.8993 ms/op
+WorkloadResult  60: 1 op, 1859700.00 ns, 1.8597 ms/op
+WorkloadResult  61: 1 op, 2004100.00 ns, 2.0041 ms/op
+WorkloadResult  62: 1 op, 1645600.00 ns, 1.6456 ms/op
+WorkloadResult  63: 1 op, 1804700.00 ns, 1.8047 ms/op
+WorkloadResult  64: 1 op, 1738900.00 ns, 1.7389 ms/op
+WorkloadResult  65: 1 op, 2187100.00 ns, 2.1871 ms/op
+WorkloadResult  66: 1 op, 1581300.00 ns, 1.5813 ms/op
+WorkloadResult  67: 1 op, 2074600.00 ns, 2.0746 ms/op
+WorkloadResult  68: 1 op, 2142500.00 ns, 2.1425 ms/op
+WorkloadResult  69: 1 op, 1821100.00 ns, 1.8211 ms/op
+WorkloadResult  70: 1 op, 2035200.00 ns, 2.0352 ms/op
+WorkloadResult  71: 1 op, 1792400.00 ns, 1.7924 ms/op
+WorkloadResult  72: 1 op, 2194800.00 ns, 2.1948 ms/op
+WorkloadResult  73: 1 op, 1587200.00 ns, 1.5872 ms/op
+WorkloadResult  74: 1 op, 1674400.00 ns, 1.6744 ms/op
+WorkloadResult  75: 1 op, 2376400.00 ns, 2.3764 ms/op
+WorkloadResult  76: 1 op, 2392200.00 ns, 2.3922 ms/op
+WorkloadResult  77: 1 op, 2024900.00 ns, 2.0249 ms/op
+WorkloadResult  78: 1 op, 1669000.00 ns, 1.6690 ms/op
+WorkloadResult  79: 1 op, 1713900.00 ns, 1.7139 ms/op
+WorkloadResult  80: 1 op, 1971900.00 ns, 1.9719 ms/op
+WorkloadResult  81: 1 op, 1982300.00 ns, 1.9823 ms/op
+WorkloadResult  82: 1 op, 1698100.00 ns, 1.6981 ms/op
+WorkloadResult  83: 1 op, 1943900.00 ns, 1.9439 ms/op
+WorkloadResult  84: 1 op, 1704700.00 ns, 1.7047 ms/op
+WorkloadResult  85: 1 op, 2009500.00 ns, 2.0095 ms/op
+WorkloadResult  86: 1 op, 1913700.00 ns, 1.9137 ms/op
+WorkloadResult  87: 1 op, 1562800.00 ns, 1.5628 ms/op
+WorkloadResult  88: 1 op, 1674500.00 ns, 1.6745 ms/op
+WorkloadResult  89: 1 op, 1858800.00 ns, 1.8588 ms/op
+WorkloadResult  90: 1 op, 2075400.00 ns, 2.0754 ms/op
+WorkloadResult  91: 1 op, 1788400.00 ns, 1.7884 ms/op
+WorkloadResult  92: 1 op, 2015000.00 ns, 2.0150 ms/op
+WorkloadResult  93: 1 op, 2204100.00 ns, 2.2041 ms/op
+WorkloadResult  94: 1 op, 2668000.00 ns, 2.6680 ms/op
+WorkloadResult  95: 1 op, 2192600.00 ns, 2.1926 ms/op
+WorkloadResult  96: 1 op, 2062200.00 ns, 2.0622 ms/op
+// GC:  0 0 0 14120 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 16528 has exited with code 0.
+
+Mean = 1.936 ms, StdErr = 0.027 ms (1.40%), N = 96, StdDev = 0.266 ms
+Min = 1.522 ms, Q1 = 1.704 ms, Median = 1.916 ms, Q3 = 2.071 ms, Max = 2.674 ms
+IQR = 0.367 ms, LowerFence = 1.154 ms, UpperFence = 2.622 ms
+ConfidenceInterval = [1.844 ms; 2.029 ms] (CI 99.9%), Margin = 0.092 ms (4.77% of Mean)
+Skewness = 0.72, Kurtosis = 3.1, MValue = 3.84
+
+// ** Remained 2 (66,7 %) benchmark(s) to run. Estimated finish 2023-05-14 15:18 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Höchstleistung)
+// **************************
+// Benchmark: UpdateStatement.UpdateAdo: Job-LEYHBL(InvocationCount=1, UnrollFactor=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 0b043087-0176-45e2-9e3c-135f8cc668bf.dll --anonymousPipes 1432 1428 --benchmarkName CoreApp.Benchmark.UpdateStatement.UpdateAdo --job "InvocationCount=1, UnrollFactor=1" --benchmarkId 1 in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\0b043087-0176-45e2-9e3c-135f8cc668bf\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-SYDLGG(InvocationCount=1, UnrollFactor=1)
+
+OverheadJitting  1: 1 op, 176300.00 ns, 176.3000 us/op
+WorkloadJitting  1: 1 op, 2587000.00 ns, 2.5870 ms/op
+
+OverheadWarmup   1: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   5: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   6: 1 op, 300.00 ns, 300.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   4: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   7: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   8: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   9: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  13: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual  14: 1 op, 800.00 ns, 800.0000 ns/op
+OverheadActual  15: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual  16: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  17: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  18: 1 op, 600.00 ns, 600.0000 ns/op
+OverheadActual  19: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  20: 1 op, 400.00 ns, 400.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 1921000.00 ns, 1.9210 ms/op
+WorkloadWarmup   2: 1 op, 1447000.00 ns, 1.4470 ms/op
+WorkloadWarmup   3: 1 op, 1138500.00 ns, 1.1385 ms/op
+WorkloadWarmup   4: 1 op, 1876100.00 ns, 1.8761 ms/op
+WorkloadWarmup   5: 1 op, 1563100.00 ns, 1.5631 ms/op
+WorkloadWarmup   6: 1 op, 1461400.00 ns, 1.4614 ms/op
+WorkloadWarmup   7: 1 op, 1721100.00 ns, 1.7211 ms/op
+WorkloadWarmup   8: 1 op, 1707300.00 ns, 1.7073 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 1570700.00 ns, 1.5707 ms/op
+WorkloadActual   2: 1 op, 2414500.00 ns, 2.4145 ms/op
+WorkloadActual   3: 1 op, 1794700.00 ns, 1.7947 ms/op
+WorkloadActual   4: 1 op, 1790600.00 ns, 1.7906 ms/op
+WorkloadActual   5: 1 op, 2032800.00 ns, 2.0328 ms/op
+WorkloadActual   6: 1 op, 2003700.00 ns, 2.0037 ms/op
+WorkloadActual   7: 1 op, 1837700.00 ns, 1.8377 ms/op
+WorkloadActual   8: 1 op, 2317300.00 ns, 2.3173 ms/op
+WorkloadActual   9: 1 op, 1870600.00 ns, 1.8706 ms/op
+WorkloadActual  10: 1 op, 1466000.00 ns, 1.4660 ms/op
+WorkloadActual  11: 1 op, 1743700.00 ns, 1.7437 ms/op
+WorkloadActual  12: 1 op, 1451500.00 ns, 1.4515 ms/op
+WorkloadActual  13: 1 op, 1466700.00 ns, 1.4667 ms/op
+WorkloadActual  14: 1 op, 1699200.00 ns, 1.6992 ms/op
+WorkloadActual  15: 1 op, 1529500.00 ns, 1.5295 ms/op
+WorkloadActual  16: 1 op, 1392200.00 ns, 1.3922 ms/op
+WorkloadActual  17: 1 op, 1788500.00 ns, 1.7885 ms/op
+WorkloadActual  18: 1 op, 1283000.00 ns, 1.2830 ms/op
+WorkloadActual  19: 1 op, 1673700.00 ns, 1.6737 ms/op
+WorkloadActual  20: 1 op, 1232600.00 ns, 1.2326 ms/op
+WorkloadActual  21: 1 op, 1791200.00 ns, 1.7912 ms/op
+WorkloadActual  22: 1 op, 1433500.00 ns, 1.4335 ms/op
+WorkloadActual  23: 1 op, 1269100.00 ns, 1.2691 ms/op
+WorkloadActual  24: 1 op, 1368000.00 ns, 1.3680 ms/op
+WorkloadActual  25: 1 op, 1696300.00 ns, 1.6963 ms/op
+WorkloadActual  26: 1 op, 1559400.00 ns, 1.5594 ms/op
+WorkloadActual  27: 1 op, 1670100.00 ns, 1.6701 ms/op
+WorkloadActual  28: 1 op, 1157900.00 ns, 1.1579 ms/op
+WorkloadActual  29: 1 op, 1374400.00 ns, 1.3744 ms/op
+WorkloadActual  30: 1 op, 1784700.00 ns, 1.7847 ms/op
+WorkloadActual  31: 1 op, 1696000.00 ns, 1.6960 ms/op
+WorkloadActual  32: 1 op, 1552000.00 ns, 1.5520 ms/op
+WorkloadActual  33: 1 op, 1320800.00 ns, 1.3208 ms/op
+WorkloadActual  34: 1 op, 1383900.00 ns, 1.3839 ms/op
+WorkloadActual  35: 1 op, 1248200.00 ns, 1.2482 ms/op
+WorkloadActual  36: 1 op, 1380400.00 ns, 1.3804 ms/op
+WorkloadActual  37: 1 op, 1691100.00 ns, 1.6911 ms/op
+WorkloadActual  38: 1 op, 1109900.00 ns, 1.1099 ms/op
+WorkloadActual  39: 1 op, 1555900.00 ns, 1.5559 ms/op
+WorkloadActual  40: 1 op, 1327100.00 ns, 1.3271 ms/op
+WorkloadActual  41: 1 op, 1414500.00 ns, 1.4145 ms/op
+WorkloadActual  42: 1 op, 1735800.00 ns, 1.7358 ms/op
+WorkloadActual  43: 1 op, 1338500.00 ns, 1.3385 ms/op
+WorkloadActual  44: 1 op, 1358000.00 ns, 1.3580 ms/op
+WorkloadActual  45: 1 op, 1313700.00 ns, 1.3137 ms/op
+WorkloadActual  46: 1 op, 1365200.00 ns, 1.3652 ms/op
+WorkloadActual  47: 1 op, 1739800.00 ns, 1.7398 ms/op
+WorkloadActual  48: 1 op, 1322500.00 ns, 1.3225 ms/op
+WorkloadActual  49: 1 op, 1348200.00 ns, 1.3482 ms/op
+WorkloadActual  50: 1 op, 1388500.00 ns, 1.3885 ms/op
+WorkloadActual  51: 1 op, 1606700.00 ns, 1.6067 ms/op
+WorkloadActual  52: 1 op, 2021000.00 ns, 2.0210 ms/op
+WorkloadActual  53: 1 op, 2018100.00 ns, 2.0181 ms/op
+WorkloadActual  54: 1 op, 1803800.00 ns, 1.8038 ms/op
+WorkloadActual  55: 1 op, 2136800.00 ns, 2.1368 ms/op
+WorkloadActual  56: 1 op, 1485000.00 ns, 1.4850 ms/op
+WorkloadActual  57: 1 op, 1453700.00 ns, 1.4537 ms/op
+WorkloadActual  58: 1 op, 1432100.00 ns, 1.4321 ms/op
+WorkloadActual  59: 1 op, 1654000.00 ns, 1.6540 ms/op
+WorkloadActual  60: 1 op, 1396000.00 ns, 1.3960 ms/op
+WorkloadActual  61: 1 op, 1251100.00 ns, 1.2511 ms/op
+WorkloadActual  62: 1 op, 1400500.00 ns, 1.4005 ms/op
+WorkloadActual  63: 1 op, 1162700.00 ns, 1.1627 ms/op
+WorkloadActual  64: 1 op, 1588700.00 ns, 1.5887 ms/op
+WorkloadActual  65: 1 op, 2251100.00 ns, 2.2511 ms/op
+WorkloadActual  66: 1 op, 1565700.00 ns, 1.5657 ms/op
+WorkloadActual  67: 1 op, 1787800.00 ns, 1.7878 ms/op
+WorkloadActual  68: 1 op, 1682900.00 ns, 1.6829 ms/op
+WorkloadActual  69: 1 op, 1523700.00 ns, 1.5237 ms/op
+WorkloadActual  70: 1 op, 1542300.00 ns, 1.5423 ms/op
+WorkloadActual  71: 1 op, 1198000.00 ns, 1.1980 ms/op
+WorkloadActual  72: 1 op, 1625500.00 ns, 1.6255 ms/op
+WorkloadActual  73: 1 op, 1599800.00 ns, 1.5998 ms/op
+WorkloadActual  74: 1 op, 1675200.00 ns, 1.6752 ms/op
+WorkloadActual  75: 1 op, 2175700.00 ns, 2.1757 ms/op
+WorkloadActual  76: 1 op, 2101900.00 ns, 2.1019 ms/op
+WorkloadActual  77: 1 op, 1870500.00 ns, 1.8705 ms/op
+WorkloadActual  78: 1 op, 1599100.00 ns, 1.5991 ms/op
+WorkloadActual  79: 1 op, 1246300.00 ns, 1.2463 ms/op
+WorkloadActual  80: 1 op, 1283100.00 ns, 1.2831 ms/op
+WorkloadActual  81: 1 op, 1317100.00 ns, 1.3171 ms/op
+WorkloadActual  82: 1 op, 1676900.00 ns, 1.6769 ms/op
+WorkloadActual  83: 1 op, 1105500.00 ns, 1.1055 ms/op
+WorkloadActual  84: 1 op, 1276600.00 ns, 1.2766 ms/op
+WorkloadActual  85: 1 op, 1561900.00 ns, 1.5619 ms/op
+WorkloadActual  86: 1 op, 1602100.00 ns, 1.6021 ms/op
+WorkloadActual  87: 1 op, 1497800.00 ns, 1.4978 ms/op
+WorkloadActual  88: 1 op, 1457000.00 ns, 1.4570 ms/op
+WorkloadActual  89: 1 op, 1840400.00 ns, 1.8404 ms/op
+WorkloadActual  90: 1 op, 2079400.00 ns, 2.0794 ms/op
+WorkloadActual  91: 1 op, 1790300.00 ns, 1.7903 ms/op
+WorkloadActual  92: 1 op, 2370700.00 ns, 2.3707 ms/op
+WorkloadActual  93: 1 op, 2048500.00 ns, 2.0485 ms/op
+WorkloadActual  94: 1 op, 1705000.00 ns, 1.7050 ms/op
+WorkloadActual  95: 1 op, 1915700.00 ns, 1.9157 ms/op
+WorkloadActual  96: 1 op, 2453200.00 ns, 2.4532 ms/op
+WorkloadActual  97: 1 op, 2036100.00 ns, 2.0361 ms/op
+WorkloadActual  98: 1 op, 1865200.00 ns, 1.8652 ms/op
+WorkloadActual  99: 1 op, 1849200.00 ns, 1.8492 ms/op
+WorkloadActual  100: 1 op, 1935300.00 ns, 1.9353 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 1570400.00 ns, 1.5704 ms/op
+WorkloadResult   2: 1 op, 1794400.00 ns, 1.7944 ms/op
+WorkloadResult   3: 1 op, 1790300.00 ns, 1.7903 ms/op
+WorkloadResult   4: 1 op, 2032500.00 ns, 2.0325 ms/op
+WorkloadResult   5: 1 op, 2003400.00 ns, 2.0034 ms/op
+WorkloadResult   6: 1 op, 1837400.00 ns, 1.8374 ms/op
+WorkloadResult   7: 1 op, 2317000.00 ns, 2.3170 ms/op
+WorkloadResult   8: 1 op, 1870300.00 ns, 1.8703 ms/op
+WorkloadResult   9: 1 op, 1465700.00 ns, 1.4657 ms/op
+WorkloadResult  10: 1 op, 1743400.00 ns, 1.7434 ms/op
+WorkloadResult  11: 1 op, 1451200.00 ns, 1.4512 ms/op
+WorkloadResult  12: 1 op, 1466400.00 ns, 1.4664 ms/op
+WorkloadResult  13: 1 op, 1698900.00 ns, 1.6989 ms/op
+WorkloadResult  14: 1 op, 1529200.00 ns, 1.5292 ms/op
+WorkloadResult  15: 1 op, 1391900.00 ns, 1.3919 ms/op
+WorkloadResult  16: 1 op, 1788200.00 ns, 1.7882 ms/op
+WorkloadResult  17: 1 op, 1282700.00 ns, 1.2827 ms/op
+WorkloadResult  18: 1 op, 1673400.00 ns, 1.6734 ms/op
+WorkloadResult  19: 1 op, 1232300.00 ns, 1.2323 ms/op
+WorkloadResult  20: 1 op, 1790900.00 ns, 1.7909 ms/op
+WorkloadResult  21: 1 op, 1433200.00 ns, 1.4332 ms/op
+WorkloadResult  22: 1 op, 1268800.00 ns, 1.2688 ms/op
+WorkloadResult  23: 1 op, 1367700.00 ns, 1.3677 ms/op
+WorkloadResult  24: 1 op, 1696000.00 ns, 1.6960 ms/op
+WorkloadResult  25: 1 op, 1559100.00 ns, 1.5591 ms/op
+WorkloadResult  26: 1 op, 1669800.00 ns, 1.6698 ms/op
+WorkloadResult  27: 1 op, 1157600.00 ns, 1.1576 ms/op
+WorkloadResult  28: 1 op, 1374100.00 ns, 1.3741 ms/op
+WorkloadResult  29: 1 op, 1784400.00 ns, 1.7844 ms/op
+WorkloadResult  30: 1 op, 1695700.00 ns, 1.6957 ms/op
+WorkloadResult  31: 1 op, 1551700.00 ns, 1.5517 ms/op
+WorkloadResult  32: 1 op, 1320500.00 ns, 1.3205 ms/op
+WorkloadResult  33: 1 op, 1383600.00 ns, 1.3836 ms/op
+WorkloadResult  34: 1 op, 1247900.00 ns, 1.2479 ms/op
+WorkloadResult  35: 1 op, 1380100.00 ns, 1.3801 ms/op
+WorkloadResult  36: 1 op, 1690800.00 ns, 1.6908 ms/op
+WorkloadResult  37: 1 op, 1109600.00 ns, 1.1096 ms/op
+WorkloadResult  38: 1 op, 1555600.00 ns, 1.5556 ms/op
+WorkloadResult  39: 1 op, 1326800.00 ns, 1.3268 ms/op
+WorkloadResult  40: 1 op, 1414200.00 ns, 1.4142 ms/op
+WorkloadResult  41: 1 op, 1735500.00 ns, 1.7355 ms/op
+WorkloadResult  42: 1 op, 1338200.00 ns, 1.3382 ms/op
+WorkloadResult  43: 1 op, 1357700.00 ns, 1.3577 ms/op
+WorkloadResult  44: 1 op, 1313400.00 ns, 1.3134 ms/op
+WorkloadResult  45: 1 op, 1364900.00 ns, 1.3649 ms/op
+WorkloadResult  46: 1 op, 1739500.00 ns, 1.7395 ms/op
+WorkloadResult  47: 1 op, 1322200.00 ns, 1.3222 ms/op
+WorkloadResult  48: 1 op, 1347900.00 ns, 1.3479 ms/op
+WorkloadResult  49: 1 op, 1388200.00 ns, 1.3882 ms/op
+WorkloadResult  50: 1 op, 1606400.00 ns, 1.6064 ms/op
+WorkloadResult  51: 1 op, 2020700.00 ns, 2.0207 ms/op
+WorkloadResult  52: 1 op, 2017800.00 ns, 2.0178 ms/op
+WorkloadResult  53: 1 op, 1803500.00 ns, 1.8035 ms/op
+WorkloadResult  54: 1 op, 2136500.00 ns, 2.1365 ms/op
+WorkloadResult  55: 1 op, 1484700.00 ns, 1.4847 ms/op
+WorkloadResult  56: 1 op, 1453400.00 ns, 1.4534 ms/op
+WorkloadResult  57: 1 op, 1431800.00 ns, 1.4318 ms/op
+WorkloadResult  58: 1 op, 1653700.00 ns, 1.6537 ms/op
+WorkloadResult  59: 1 op, 1395700.00 ns, 1.3957 ms/op
+WorkloadResult  60: 1 op, 1250800.00 ns, 1.2508 ms/op
+WorkloadResult  61: 1 op, 1400200.00 ns, 1.4002 ms/op
+WorkloadResult  62: 1 op, 1162400.00 ns, 1.1624 ms/op
+WorkloadResult  63: 1 op, 1588400.00 ns, 1.5884 ms/op
+WorkloadResult  64: 1 op, 2250800.00 ns, 2.2508 ms/op
+WorkloadResult  65: 1 op, 1565400.00 ns, 1.5654 ms/op
+WorkloadResult  66: 1 op, 1787500.00 ns, 1.7875 ms/op
+WorkloadResult  67: 1 op, 1682600.00 ns, 1.6826 ms/op
+WorkloadResult  68: 1 op, 1523400.00 ns, 1.5234 ms/op
+WorkloadResult  69: 1 op, 1542000.00 ns, 1.5420 ms/op
+WorkloadResult  70: 1 op, 1197700.00 ns, 1.1977 ms/op
+WorkloadResult  71: 1 op, 1625200.00 ns, 1.6252 ms/op
+WorkloadResult  72: 1 op, 1599500.00 ns, 1.5995 ms/op
+WorkloadResult  73: 1 op, 1674900.00 ns, 1.6749 ms/op
+WorkloadResult  74: 1 op, 2175400.00 ns, 2.1754 ms/op
+WorkloadResult  75: 1 op, 2101600.00 ns, 2.1016 ms/op
+WorkloadResult  76: 1 op, 1870200.00 ns, 1.8702 ms/op
+WorkloadResult  77: 1 op, 1598800.00 ns, 1.5988 ms/op
+WorkloadResult  78: 1 op, 1246000.00 ns, 1.2460 ms/op
+WorkloadResult  79: 1 op, 1282800.00 ns, 1.2828 ms/op
+WorkloadResult  80: 1 op, 1316800.00 ns, 1.3168 ms/op
+WorkloadResult  81: 1 op, 1676600.00 ns, 1.6766 ms/op
+WorkloadResult  82: 1 op, 1105200.00 ns, 1.1052 ms/op
+WorkloadResult  83: 1 op, 1276300.00 ns, 1.2763 ms/op
+WorkloadResult  84: 1 op, 1561600.00 ns, 1.5616 ms/op
+WorkloadResult  85: 1 op, 1601800.00 ns, 1.6018 ms/op
+WorkloadResult  86: 1 op, 1497500.00 ns, 1.4975 ms/op
+WorkloadResult  87: 1 op, 1456700.00 ns, 1.4567 ms/op
+WorkloadResult  88: 1 op, 1840100.00 ns, 1.8401 ms/op
+WorkloadResult  89: 1 op, 2079100.00 ns, 2.0791 ms/op
+WorkloadResult  90: 1 op, 1790000.00 ns, 1.7900 ms/op
+WorkloadResult  91: 1 op, 2370400.00 ns, 2.3704 ms/op
+WorkloadResult  92: 1 op, 2048200.00 ns, 2.0482 ms/op
+WorkloadResult  93: 1 op, 1704700.00 ns, 1.7047 ms/op
+WorkloadResult  94: 1 op, 1915400.00 ns, 1.9154 ms/op
+WorkloadResult  95: 1 op, 2035800.00 ns, 2.0358 ms/op
+WorkloadResult  96: 1 op, 1864900.00 ns, 1.8649 ms/op
+WorkloadResult  97: 1 op, 1848900.00 ns, 1.8489 ms/op
+WorkloadResult  98: 1 op, 1935000.00 ns, 1.9350 ms/op
+// GC:  0 0 0 1560 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 13608 has exited with code 0.
+
+Mean = 1.609 ms, StdErr = 0.029 ms (1.80%), N = 98, StdDev = 0.286 ms
+Min = 1.105 ms, Q1 = 1.381 ms, Median = 1.579 ms, Q3 = 1.790 ms, Max = 2.370 ms
+IQR = 0.409 ms, LowerFence = 0.767 ms, UpperFence = 2.404 ms
+ConfidenceInterval = [1.511 ms; 1.707 ms] (CI 99.9%), Margin = 0.098 ms (6.10% of Mean)
+Skewness = 0.48, Kurtosis = 2.61, MValue = 4.32
+
+// ** Remained 1 (33,3 %) benchmark(s) to run. Estimated finish 2023-05-14 15:18 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Höchstleistung)
+// **************************
+// Benchmark: UpdateStatement.UpdateNHibernate: Job-LEYHBL(InvocationCount=1, UnrollFactor=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 0b043087-0176-45e2-9e3c-135f8cc668bf.dll --anonymousPipes 2080 1496 --benchmarkName CoreApp.Benchmark.UpdateStatement.UpdateNHibernate --job "InvocationCount=1, UnrollFactor=1" --benchmarkId 2 in E:\FH\Bachelor\Bachelor\Programm\CoreApp\CoreApp\bin\Debug\net7.0\0b043087-0176-45e2-9e3c-135f8cc668bf\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-XVPKGP(InvocationCount=1, UnrollFactor=1)
+
+OverheadJitting  1: 1 op, 199800.00 ns, 199.8000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadJitting  1: 1 op, 60326400.00 ns, 60.3264 ms/op
+
+OverheadWarmup   1: 1 op, 1000.00 ns, 1.0000 us/op
+OverheadWarmup   2: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   3: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadWarmup   4: 1 op, 700.00 ns, 700.0000 ns/op
+OverheadWarmup   5: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadWarmup   6: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadWarmup   7: 1 op, 400.00 ns, 400.0000 ns/op
+
+OverheadActual   1: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual   2: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual   3: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   4: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   6: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   7: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual   8: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   9: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  10: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual  11: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  12: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual  13: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual  14: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  15: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual  16: 1 op, 600.00 ns, 600.0000 ns/op
+OverheadActual  17: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  18: 1 op, 600.00 ns, 600.0000 ns/op
+OverheadActual  19: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  20: 1 op, 500.00 ns, 500.0000 ns/op
+
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadWarmup   1: 1 op, 2871500.00 ns, 2.8715 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadWarmup   2: 1 op, 979500.00 ns, 979.5000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadWarmup   3: 1 op, 772600.00 ns, 772.6000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadWarmup   4: 1 op, 672200.00 ns, 672.2000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadWarmup   5: 1 op, 711000.00 ns, 711.0000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadWarmup   6: 1 op, 822100.00 ns, 822.1000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadWarmup   7: 1 op, 632200.00 ns, 632.2000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadWarmup   8: 1 op, 702100.00 ns, 702.1000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadWarmup   9: 1 op, 664000.00 ns, 664.0000 us/op
+
+// BeforeActualRun
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual   1: 1 op, 798600.00 ns, 798.6000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual   2: 1 op, 1012400.00 ns, 1.0124 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual   3: 1 op, 780000.00 ns, 780.0000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual   4: 1 op, 672000.00 ns, 672.0000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual   5: 1 op, 665400.00 ns, 665.4000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual   6: 1 op, 878700.00 ns, 878.7000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual   7: 1 op, 701500.00 ns, 701.5000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual   8: 1 op, 800300.00 ns, 800.3000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual   9: 1 op, 915800.00 ns, 915.8000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  10: 1 op, 882500.00 ns, 882.5000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  11: 1 op, 817600.00 ns, 817.6000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  12: 1 op, 791800.00 ns, 791.8000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  13: 1 op, 930800.00 ns, 930.8000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  14: 1 op, 833500.00 ns, 833.5000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  15: 1 op, 7263600.00 ns, 7.2636 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  16: 1 op, 843000.00 ns, 843.0000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  17: 1 op, 943800.00 ns, 943.8000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  18: 1 op, 1074600.00 ns, 1.0746 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  19: 1 op, 1098900.00 ns, 1.0989 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  20: 1 op, 819300.00 ns, 819.3000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  21: 1 op, 814100.00 ns, 814.1000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  22: 1 op, 803700.00 ns, 803.7000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  23: 1 op, 683200.00 ns, 683.2000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  24: 1 op, 851100.00 ns, 851.1000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  25: 1 op, 870000.00 ns, 870.0000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  26: 1 op, 755100.00 ns, 755.1000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  27: 1 op, 1353400.00 ns, 1.3534 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  28: 1 op, 975300.00 ns, 975.3000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  29: 1 op, 852900.00 ns, 852.9000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  30: 1 op, 933400.00 ns, 933.4000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  31: 1 op, 703700.00 ns, 703.7000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  32: 1 op, 767000.00 ns, 767.0000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  33: 1 op, 688700.00 ns, 688.7000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  34: 1 op, 1129800.00 ns, 1.1298 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  35: 1 op, 944600.00 ns, 944.6000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  36: 1 op, 781400.00 ns, 781.4000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  37: 1 op, 943800.00 ns, 943.8000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  38: 1 op, 876000.00 ns, 876.0000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  39: 1 op, 737000.00 ns, 737.0000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  40: 1 op, 893500.00 ns, 893.5000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  41: 1 op, 748400.00 ns, 748.4000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  42: 1 op, 740500.00 ns, 740.5000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  43: 1 op, 1044500.00 ns, 1.0445 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  44: 1 op, 1840100.00 ns, 1.8401 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  45: 1 op, 926300.00 ns, 926.3000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  46: 1 op, 986700.00 ns, 986.7000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  47: 1 op, 1010600.00 ns, 1.0106 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  48: 1 op, 964900.00 ns, 964.9000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  49: 1 op, 990900.00 ns, 990.9000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  50: 1 op, 1398200.00 ns, 1.3982 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  51: 1 op, 858500.00 ns, 858.5000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  52: 1 op, 1090600.00 ns, 1.0906 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  53: 1 op, 998700.00 ns, 998.7000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  54: 1 op, 839100.00 ns, 839.1000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  55: 1 op, 927400.00 ns, 927.4000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  56: 1 op, 959600.00 ns, 959.6000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  57: 1 op, 869000.00 ns, 869.0000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  58: 1 op, 930700.00 ns, 930.7000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  59: 1 op, 793200.00 ns, 793.2000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  60: 1 op, 981400.00 ns, 981.4000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  61: 1 op, 811500.00 ns, 811.5000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  62: 1 op, 1010700.00 ns, 1.0107 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  63: 1 op, 1169800.00 ns, 1.1698 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  64: 1 op, 715300.00 ns, 715.3000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  65: 1 op, 801700.00 ns, 801.7000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  66: 1 op, 802900.00 ns, 802.9000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  67: 1 op, 922300.00 ns, 922.3000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  68: 1 op, 795300.00 ns, 795.3000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  69: 1 op, 864300.00 ns, 864.3000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  70: 1 op, 779400.00 ns, 779.4000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  71: 1 op, 1060900.00 ns, 1.0609 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  72: 1 op, 791300.00 ns, 791.3000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  73: 1 op, 945200.00 ns, 945.2000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  74: 1 op, 776600.00 ns, 776.6000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  75: 1 op, 1009700.00 ns, 1.0097 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  76: 1 op, 777100.00 ns, 777.1000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  77: 1 op, 994100.00 ns, 994.1000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  78: 1 op, 738300.00 ns, 738.3000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  79: 1 op, 792500.00 ns, 792.5000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  80: 1 op, 877600.00 ns, 877.6000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  81: 1 op, 806700.00 ns, 806.7000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  82: 1 op, 898000.00 ns, 898.0000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  83: 1 op, 777100.00 ns, 777.1000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  84: 1 op, 1258600.00 ns, 1.2586 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  85: 1 op, 1007600.00 ns, 1.0076 ms/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  86: 1 op, 730900.00 ns, 730.9000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  87: 1 op, 742900.00 ns, 742.9000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  88: 1 op, 630800.00 ns, 630.8000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  89: 1 op, 923800.00 ns, 923.8000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  90: 1 op, 735800.00 ns, 735.8000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  91: 1 op, 849600.00 ns, 849.6000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  92: 1 op, 766800.00 ns, 766.8000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  93: 1 op, 737500.00 ns, 737.5000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  94: 1 op, 583200.00 ns, 583.2000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  95: 1 op, 554700.00 ns, 554.7000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  96: 1 op, 521100.00 ns, 521.1000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  97: 1 op, 709700.00 ns, 709.7000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  98: 1 op, 842400.00 ns, 842.4000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  99: 1 op, 661200.00 ns, 661.2000 us/op
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadActual  100: 1 op, 760100.00 ns, 760.1000 us/op
+
+// AfterActualRun
+NHibernate: SELECT personen0_.ID as id1_0_0_, personen0_.Adresse as adresse2_0_0_, personen0_.Email as email3_0_0_, personen0_.Name as name4_0_0_ FROM [Personen] personen0_ WHERE personen0_.ID=@p0;@p0 = 11174591 [Type: Int32 (0:0:0)]
+WorkloadResult   1: 1 op, 798100.00 ns, 798.1000 us/op
+WorkloadResult   2: 1 op, 1011900.00 ns, 1.0119 ms/op
+WorkloadResult   3: 1 op, 779500.00 ns, 779.5000 us/op
+WorkloadResult   4: 1 op, 671500.00 ns, 671.5000 us/op
+WorkloadResult   5: 1 op, 664900.00 ns, 664.9000 us/op
+WorkloadResult   6: 1 op, 878200.00 ns, 878.2000 us/op
+WorkloadResult   7: 1 op, 701000.00 ns, 701.0000 us/op
+WorkloadResult   8: 1 op, 799800.00 ns, 799.8000 us/op
+WorkloadResult   9: 1 op, 915300.00 ns, 915.3000 us/op
+WorkloadResult  10: 1 op, 882000.00 ns, 882.0000 us/op
+WorkloadResult  11: 1 op, 817100.00 ns, 817.1000 us/op
+WorkloadResult  12: 1 op, 791300.00 ns, 791.3000 us/op
+WorkloadResult  13: 1 op, 930300.00 ns, 930.3000 us/op
+WorkloadResult  14: 1 op, 833000.00 ns, 833.0000 us/op
+WorkloadResult  15: 1 op, 842500.00 ns, 842.5000 us/op
+WorkloadResult  16: 1 op, 943300.00 ns, 943.3000 us/op
+WorkloadResult  17: 1 op, 1074100.00 ns, 1.0741 ms/op
+WorkloadResult  18: 1 op, 1098400.00 ns, 1.0984 ms/op
+WorkloadResult  19: 1 op, 818800.00 ns, 818.8000 us/op
+WorkloadResult  20: 1 op, 813600.00 ns, 813.6000 us/op
+WorkloadResult  21: 1 op, 803200.00 ns, 803.2000 us/op
+WorkloadResult  22: 1 op, 682700.00 ns, 682.7000 us/op
+WorkloadResult  23: 1 op, 850600.00 ns, 850.6000 us/op
+WorkloadResult  24: 1 op, 869500.00 ns, 869.5000 us/op
+WorkloadResult  25: 1 op, 754600.00 ns, 754.6000 us/op
+WorkloadResult  26: 1 op, 974800.00 ns, 974.8000 us/op
+WorkloadResult  27: 1 op, 852400.00 ns, 852.4000 us/op
+WorkloadResult  28: 1 op, 932900.00 ns, 932.9000 us/op
+WorkloadResult  29: 1 op, 703200.00 ns, 703.2000 us/op
+WorkloadResult  30: 1 op, 766500.00 ns, 766.5000 us/op
+WorkloadResult  31: 1 op, 688200.00 ns, 688.2000 us/op
+WorkloadResult  32: 1 op, 1129300.00 ns, 1.1293 ms/op
+WorkloadResult  33: 1 op, 944100.00 ns, 944.1000 us/op
+WorkloadResult  34: 1 op, 780900.00 ns, 780.9000 us/op
+WorkloadResult  35: 1 op, 943300.00 ns, 943.3000 us/op
+WorkloadResult  36: 1 op, 875500.00 ns, 875.5000 us/op
+WorkloadResult  37: 1 op, 736500.00 ns, 736.5000 us/op
+WorkloadResult  38: 1 op, 893000.00 ns, 893.0000 us/op
+WorkloadResult  39: 1 op, 747900.00 ns, 747.9000 us/op
+WorkloadResult  40: 1 op, 740000.00 ns, 740.0000 us/op
+WorkloadResult  41: 1 op, 1044000.00 ns, 1.0440 ms/op
+WorkloadResult  42: 1 op, 925800.00 ns, 925.8000 us/op
+WorkloadResult  43: 1 op, 986200.00 ns, 986.2000 us/op
+WorkloadResult  44: 1 op, 1010100.00 ns, 1.0101 ms/op
+WorkloadResult  45: 1 op, 964400.00 ns, 964.4000 us/op
+WorkloadResult  46: 1 op, 990400.00 ns, 990.4000 us/op
+WorkloadResult  47: 1 op, 858000.00 ns, 858.0000 us/op
+WorkloadResult  48: 1 op, 1090100.00 ns, 1.0901 ms/op
+WorkloadResult  49: 1 op, 998200.00 ns, 998.2000 us/op
+WorkloadResult  50: 1 op, 838600.00 ns, 838.6000 us/op
+WorkloadResult  51: 1 op, 926900.00 ns, 926.9000 us/op
+WorkloadResult  52: 1 op, 959100.00 ns, 959.1000 us/op
+WorkloadResult  53: 1 op, 868500.00 ns, 868.5000 us/op
+WorkloadResult  54: 1 op, 930200.00 ns, 930.2000 us/op
+WorkloadResult  55: 1 op, 792700.00 ns, 792.7000 us/op
+WorkloadResult  56: 1 op, 980900.00 ns, 980.9000 us/op
+WorkloadResult  57: 1 op, 811000.00 ns, 811.0000 us/op
+WorkloadResult  58: 1 op, 1010200.00 ns, 1.0102 ms/op
+WorkloadResult  59: 1 op, 1169300.00 ns, 1.1693 ms/op
+WorkloadResult  60: 1 op, 714800.00 ns, 714.8000 us/op
+WorkloadResult  61: 1 op, 801200.00 ns, 801.2000 us/op
+WorkloadResult  62: 1 op, 802400.00 ns, 802.4000 us/op
+WorkloadResult  63: 1 op, 921800.00 ns, 921.8000 us/op
+WorkloadResult  64: 1 op, 794800.00 ns, 794.8000 us/op
+WorkloadResult  65: 1 op, 863800.00 ns, 863.8000 us/op
+WorkloadResult  66: 1 op, 778900.00 ns, 778.9000 us/op
+WorkloadResult  67: 1 op, 1060400.00 ns, 1.0604 ms/op
+WorkloadResult  68: 1 op, 790800.00 ns, 790.8000 us/op
+WorkloadResult  69: 1 op, 944700.00 ns, 944.7000 us/op
+WorkloadResult  70: 1 op, 776100.00 ns, 776.1000 us/op
+WorkloadResult  71: 1 op, 1009200.00 ns, 1.0092 ms/op
+WorkloadResult  72: 1 op, 776600.00 ns, 776.6000 us/op
+WorkloadResult  73: 1 op, 993600.00 ns, 993.6000 us/op
+WorkloadResult  74: 1 op, 737800.00 ns, 737.8000 us/op
+WorkloadResult  75: 1 op, 792000.00 ns, 792.0000 us/op
+WorkloadResult  76: 1 op, 877100.00 ns, 877.1000 us/op
+WorkloadResult  77: 1 op, 806200.00 ns, 806.2000 us/op
+WorkloadResult  78: 1 op, 897500.00 ns, 897.5000 us/op
+WorkloadResult  79: 1 op, 776600.00 ns, 776.6000 us/op
+WorkloadResult  80: 1 op, 1007100.00 ns, 1.0071 ms/op
+WorkloadResult  81: 1 op, 730400.00 ns, 730.4000 us/op
+WorkloadResult  82: 1 op, 742400.00 ns, 742.4000 us/op
+WorkloadResult  83: 1 op, 630300.00 ns, 630.3000 us/op
+WorkloadResult  84: 1 op, 923300.00 ns, 923.3000 us/op
+WorkloadResult  85: 1 op, 735300.00 ns, 735.3000 us/op
+WorkloadResult  86: 1 op, 849100.00 ns, 849.1000 us/op
+WorkloadResult  87: 1 op, 766300.00 ns, 766.3000 us/op
+WorkloadResult  88: 1 op, 737000.00 ns, 737.0000 us/op
+WorkloadResult  89: 1 op, 582700.00 ns, 582.7000 us/op
+WorkloadResult  90: 1 op, 554200.00 ns, 554.2000 us/op
+WorkloadResult  91: 1 op, 520600.00 ns, 520.6000 us/op
+WorkloadResult  92: 1 op, 709200.00 ns, 709.2000 us/op
+WorkloadResult  93: 1 op, 841900.00 ns, 841.9000 us/op
+WorkloadResult  94: 1 op, 660700.00 ns, 660.7000 us/op
+WorkloadResult  95: 1 op, 759600.00 ns, 759.6000 us/op
+// GC:  0 0 0 31104 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 24548 has exited with code 0.
+
+Mean = 847.944 μs, StdErr = 13.127 μs (1.55%), N = 95, StdDev = 127.942 μs
+Min = 520.600 μs, Q1 = 766.400 μs, Median = 838.600 μs, Q3 = 938.100 μs, Max = 1,169.300 μs
+IQR = 171.700 μs, LowerFence = 508.850 μs, UpperFence = 1,195.650 μs
+ConfidenceInterval = [803.353 μs; 892.536 μs] (CI 99.9%), Margin = 44.592 μs (5.26% of Mean)
+Skewness = 0.09, Kurtosis = 2.8, MValue = 3.21
+
+// ** Remained 0 (0,0 %) benchmark(s) to run. Estimated finish 2023-05-14 15:18 (0h 0m from now) **
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Höchstleistung)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+
+// * Detailed results *
+UpdateStatement.UpdateNHibernate: Job-LEYHBL(InvocationCount=1, UnrollFactor=1)
+Runtime = .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 847.944 μs, StdErr = 13.127 μs (1.55%), N = 95, StdDev = 127.942 μs
+Min = 520.600 μs, Q1 = 766.400 μs, Median = 838.600 μs, Q3 = 938.100 μs, Max = 1,169.300 μs
+IQR = 171.700 μs, LowerFence = 508.850 μs, UpperFence = 1,195.650 μs
+ConfidenceInterval = [803.353 μs; 892.536 μs] (CI 99.9%), Margin = 44.592 μs (5.26% of Mean)
+Skewness = 0.09, Kurtosis = 2.8, MValue = 3.21
+-------------------- Histogram --------------------
+[  514.848 μs ;   588.452 μs) | @@@
+[  588.452 μs ;   658.748 μs) | @
+[  658.748 μs ;   733.948 μs) | @@@@@@@@@@
+[  733.948 μs ;   807.552 μs) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[  807.552 μs ;   883.302 μs) | @@@@@@@@@@@@@@@@@@@
+[  883.302 μs ;   920.898 μs) | @@@
+[  920.898 μs ;   994.502 μs) | @@@@@@@@@@@@@@@@@@
+[  994.502 μs ; 1,066.102 μs) | @@@@@@@@
+[1,066.102 μs ; 1,138.502 μs) | @@@@
+[1,138.502 μs ; 1,206.102 μs) | @
+---------------------------------------------------
+
+UpdateStatement.UpdateAdo: Job-LEYHBL(InvocationCount=1, UnrollFactor=1)
+Runtime = .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 1.609 ms, StdErr = 0.029 ms (1.80%), N = 98, StdDev = 0.286 ms
+Min = 1.105 ms, Q1 = 1.381 ms, Median = 1.579 ms, Q3 = 1.790 ms, Max = 2.370 ms
+IQR = 0.409 ms, LowerFence = 0.767 ms, UpperFence = 2.404 ms
+ConfidenceInterval = [1.511 ms; 1.707 ms] (CI 99.9%), Margin = 0.098 ms (6.10% of Mean)
+Skewness = 0.48, Kurtosis = 2.61, MValue = 4.32
+-------------------- Histogram --------------------
+[1.024 ms ; 1.139 ms) | @@
+[1.139 ms ; 1.308 ms) | @@@@@@@@@@@
+[1.308 ms ; 1.471 ms) | @@@@@@@@@@@@@@@@@@@@@@@@@
+[1.471 ms ; 1.542 ms) | @@@@
+[1.542 ms ; 1.705 ms) | @@@@@@@@@@@@@@@@@@@@@@@@
+[1.705 ms ; 1.884 ms) | @@@@@@@@@@@@@@@@@
+[1.884 ms ; 1.988 ms) | @@
+[1.988 ms ; 2.151 ms) | @@@@@@@@@
+[2.151 ms ; 2.229 ms) | @
+[2.229 ms ; 2.392 ms) | @@@
+---------------------------------------------------
+
+UpdateStatement.UpdateEF: Job-LEYHBL(InvocationCount=1, UnrollFactor=1)
+Runtime = .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 1.936 ms, StdErr = 0.027 ms (1.40%), N = 96, StdDev = 0.266 ms
+Min = 1.522 ms, Q1 = 1.704 ms, Median = 1.916 ms, Q3 = 2.071 ms, Max = 2.674 ms
+IQR = 0.367 ms, LowerFence = 1.154 ms, UpperFence = 2.622 ms
+ConfidenceInterval = [1.844 ms; 2.029 ms] (CI 99.9%), Margin = 0.092 ms (4.77% of Mean)
+Skewness = 0.72, Kurtosis = 3.1, MValue = 3.84
+-------------------- Histogram --------------------
+[1.446 ms ; 1.556 ms) | @
+[1.556 ms ; 1.709 ms) | @@@@@@@@@@@@@@@@@@@@@@@@
+[1.709 ms ; 1.773 ms) | @@@@
+[1.773 ms ; 1.928 ms) | @@@@@@@@@@@@@@@@@@@@
+[1.928 ms ; 2.081 ms) | @@@@@@@@@@@@@@@@@@@@@@@@@
+[2.081 ms ; 2.230 ms) | @@@@@@@@@@@
+[2.230 ms ; 2.367 ms) | @@
+[2.367 ms ; 2.519 ms) | @@@@@@
+[2.519 ms ; 2.711 ms) | @@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.5, OS=Windows 11 (10.0.22621.1702/22H2/2022Update/SunValley2)
+AMD Ryzen 5 5600X, 1 CPU, 12 logical and 6 physical cores
+.NET SDK=7.0.203
+  [Host]     : .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2 DEBUG [AttachedDebugger]
+  Job-LEYHBL : .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+
+InvocationCount=1  UnrollFactor=1  
+
+|           Method |       Mean |    Error |   StdDev | Rank | Allocated |
+|----------------- |-----------:|---------:|---------:|-----:|----------:|
+| UpdateNHibernate |   847.9 μs | 44.59 μs | 127.9 μs |    1 |  30.38 KB |
+|        UpdateAdo | 1,609.0 μs | 98.16 μs | 286.3 μs |    2 |   1.52 KB |
+|         UpdateEF | 1,936.3 μs | 92.33 μs | 266.4 μs |    3 |  13.79 KB |
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Rank      : Relative position of current benchmark mean among all benchmarks (Arabic style)
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 μs      : 1 Microsecond (0.000001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:09 (9.41 sec), executed benchmarks: 3
+
+Global total time: 00:00:13 (13.45 sec), executed benchmarks: 3
+// * Artifacts cleanup *
